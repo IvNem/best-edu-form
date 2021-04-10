@@ -1,6 +1,6 @@
 ﻿namespace best_edu_form
 {
-    partial class LessonForm
+    partial class LessonsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,35 +29,36 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(371, 30);
+            this.label1.Location = new System.Drawing.Point(29, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // richTextBox1
+            // webBrowser1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 67);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(661, 503);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.webBrowser1.Location = new System.Drawing.Point(22, 39);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(619, 426);
+            this.webBrowser1.TabIndex = 2;
             // 
-            // LessonForm
+            // LessonsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1144, 582);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label1);
-            this.Name = "LessonForm";
+            this.Name = "LessonsForm";
             this.Text = "LessonForm";
+            this.Load += new System.EventHandler(this.LessonForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -66,6 +67,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
