@@ -74,49 +74,9 @@ namespace best_edu_form
                     resx.AddResource("second_name", second_name);
                 }
                 
-                //Console.WriteLine(GetUserInfo(acs_token, second_name));
-                //var response1 = GetUserInfo(acs_token, second_name);
-                //MainClass.Root<List<MainClass.ListDiscipline>> discipline = JsonConvert.DeserializeObject<MainClass.Root<List<MainClass.ListDiscipline>>>
-                //    (response1);
-
-                //Console.WriteLine(discipline.data[0].name.ToString());
-                //foreach (var x in discipline.data)
-                //{
-                //    var name = x.name;
-                //    Console.WriteLine(name);
-                //}
                 return root.data.token.access_token.ToString();
             }
         }
-        // получение токена
-        //static Dictionary<string, string> GetTokenDictionary(string login, string password)
-        //{
-        //    var loginModel = new
-        //    {
-        //        login = login,
-        //        plainPassword = password,
-        //    };
-        //    using (var client = new HttpClient())
-        //    {
-        //        var response =
-        //            client.PostAsJsonAsync(APP_PATH + "/accounts/login/", loginModel).Result;
-        //        var result = response.Content.ReadAsStringAsync().Result;
-        //        // Десериализация полученного JSON-объекта
-        //        Dictionary<string, string> tokenDictionary =
-        //            JsonConvert.DeserializeObject<Dictionary<string, string>>(result);
-        //        return tokenDictionary;
-        //    }
-        //}
 
-
-        //// обращаемся по маршруту api/values 
-        //static string GetValues(string token)
-        //{
-        //    using (var client = CreateClient(token))
-        //    {
-        //        var response = client.GetAsync(APP_PATH + "/api/values").Result;
-        //        return response.Content.ReadAsStringAsync().Result;
-        //    }
-        //}
     }
 }

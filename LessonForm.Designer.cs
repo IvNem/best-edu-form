@@ -30,6 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.buttonCompile = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,14 +49,44 @@
             this.webBrowser1.Location = new System.Drawing.Point(22, 39);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(619, 426);
+            this.webBrowser1.Size = new System.Drawing.Size(631, 670);
             this.webBrowser1.TabIndex = 2;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(724, 78);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(360, 299);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
+            // 
+            // buttonCompile
+            // 
+            this.buttonCompile.Location = new System.Drawing.Point(724, 421);
+            this.buttonCompile.Name = "buttonCompile";
+            this.buttonCompile.Size = new System.Drawing.Size(145, 49);
+            this.buttonCompile.TabIndex = 4;
+            this.buttonCompile.Text = "Компиляция";
+            this.buttonCompile.UseVisualStyleBackColor = true;
+            this.buttonCompile.Click += new System.EventHandler(this.buttonCompile_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(939, 421);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(145, 49);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // LessonsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1144, 582);
+            this.ClientSize = new System.Drawing.Size(1197, 721);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonCompile);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label1);
             this.Name = "LessonsForm";
@@ -68,5 +101,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button buttonCompile;
+        private System.Windows.Forms.Button button2;
     }
 }
